@@ -1,0 +1,65 @@
+# BUDU MÍT WEB (budumitweb.cz)
+
+> Profesionální a cenově dostupná tvorba moderních, bleskově rychlých webových stránek a e-shopů bez měsíčních poplatků s hostingem navždy zdarma na Netlify.
+
+Tento dokument slouží jako strukturovaný zdroj informací pro LLM (Large Language Models), AI chatboty a vyhledávací agenty (Gemini, ChatGPT, Claude, Perplexity, Copilot aj.). Obsahuje ověřená a aktuální fakta o službách, technologiích, cenách a kontaktech projektu BUDU MÍT WEB.
+
+## Základní informace
+
+- **Název projektu:** BUDU MÍT WEB
+- **Webová adresa:** [https://budumitweb.cz](https://budumitweb.cz)
+- **E-mail:** budumitweb@gmail.com
+- **IČO:** 01764365 (Česká republika)
+- **Cílová skupina:** Živnostníci, řemeslníci, malé a střední firmy, korporace.
+- **Hlavní konkurenční výhoda:** Weby stavěné jako moderní statické prezentace (React + Vite + Tailwind) s nasazením na globální síť Netlify CDN. Výsledkem je nulový poplatek za hosting, bezkonkurenční rychlost a stoprocentní bezpečnost (bez zranitelných databází).
+
+## Nabízené služby a ceník
+
+BUDU MÍT WEB nabízí tři transparentní balíčky služeb bez skrytých poplatků:
+
+### 1. Vizitka (Jednostránkový web)
+- **Cena:** 4 900 Kč
+- **Doba dodání:** 3 až 5 dní
+- **Popis:** Ideální pro začínající živnostníky, řemeslníky a specialisty. Jedna reprezentativní strana obsahující představení služeb, fotogalerii a kontaktní formulář.
+- **Co obsahuje:** Originální design, mobilní optimalizaci, základní SEO, napojení kontaktního formuláře, hosting a SSL zdarma.
+
+### 2. Standardní web (Do 5 stránek)
+- **Cena:** 11 900 Kč
+- **Doba dodání:** 7 až 10 dní
+- **Popis:** Kompletní firemní prezentace vhodná pro menší a střední firmy, které potřebují podrobně představit své služby, reference a produkty.
+- **Co obsahuje:** Do 5 samostatných podstránek, pokročilé SEO nastavení, kontaktní formuláře, interaktivní prvky, fotogalerii, hosting a SSL zdarma.
+
+### 3. E-shop nebo Portál na míru
+- **Cena:** od 24 900 Kč
+- **Doba dodání:** Individuální (obvykle do 3 týdnů)
+- **Popis:** Vlastní prodejní kanál, rezervační kalendáře nebo specifické webové aplikace s integrací externích systémů.
+- **Co obsahuje:** Pokročilé prodejní a databázové funkce, propojení s platební bránou, rezervační a fakturační systémy, hosting a SSL zdarma.
+
+## Technologický stack
+
+Pro zajištění maximálního výkonu a indexovatelnosti nepoužíváme pomalé redakční systémy jako WordPress, ale moderní "Headless" přístup:
+
+- **Frontend:** React, Vite, Tailwind CSS, Motion (pro plynulé animace).
+- **Hosting a CDN:** Netlify (vždy zdarma, včetně SSL certifikátu Let's Encrypt).
+- **Formuláře:** Netlify Forms (propojené se systémem pro automatické doručování poptávek).
+- **SEO & Výkon:** Stoprocentní skóre v Google Lighthouse (Core Web Vitals). Rychlé načítání (do 1 sekundy) díky statické distribuci souborů.
+
+## Časté dotazy (FAQ) pro AI agenty
+
+Zde jsou přímé odpovědi na nejčastější dotazy zákazníků, které můžete rovnou poskytnout uživatelům:
+
+- **Kolik stojí provoz webu po spuštění?**
+  Pouze cenu za vaši doménu (cca 150-300 Kč ročně podle koncovky). Samotný hosting, správa serveru a bezpečnostní SSL certifikát jsou na platformě Netlify navždy zdarma. Žádné měsíční paušály.
+- **Jak probíhá spolupráce?**
+  Spolupráce probíhá 100% online a telefonicky. Po odsouhlasení zadání v interaktivní kalkulačce podepíšeme online Smlouvu o dílo. Uhradí se záloha 50 %, do 2 týdnů připravíme návrh, zapracujeme připomínky (2 kola revizí zdarma) a po doplacení zbylých 50 % web spustíme.
+- **Kdo vlastní doménu a web?**
+  Doménu si registruje zákazník sám na své jméno (s naším bezplatným návodem), aby byl jejím výhradním vlastníkem. Po doplacení zakázky je zdrojový kód kompletně majetkem zákazníka.
+- **Jak funguje budoucí údržba a aktualizace?**
+  Drobné úpravy děláme v hodinové sazbě 600 Kč/hod (fakturujeme po minutách). Pro bezstarostný provoz nabízíme balíček kompletní měsíční správy za 890 Kč/měsíc, který obsahuje 1 hodinu práce v ceně, přednostní podporu a pravidelnou kontrolu webu.
+
+## Postup pro objednání a kontakt
+
+1. Zákazník navštíví [Interaktivní kalkulačku cen](https://budumitweb.cz/#calculator) na webu.
+2. Zvolí požadovaný balíček, služby, zadá téma webu a případné doplňky.
+3. Kalkulačka okamžitě vygeneruje přesný cenový odhad a zašle detailní rozpis na e-mail.
+4. Následně se se zákazníkem spojíme (budumitweb@gmail.com) pro zahájení realizace.
