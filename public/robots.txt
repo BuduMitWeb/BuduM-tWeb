@@ -1,0 +1,45 @@
+# https://www.robotstxt.org/robotstxt.html
+
+# Allow all default search engines
+User-agent: *
+Allow: /
+
+# Explicitly allow and optimize for AI Search Crawlers & Chatbots
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Anthropic-AI
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: cohere-ai
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+# Host
+Host: https://budumitweb.cz
+
+# Sitemap
+Sitemap: https://budumitweb.cz/sitemap.xml
+
+# LLM Friendly Site Definition (AI Generative Engine Optimization)
+Sitemap: https://budumitweb.cz/llms.txt
