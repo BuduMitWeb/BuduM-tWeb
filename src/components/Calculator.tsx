@@ -21,9 +21,10 @@ import { InquiryFormData, InquiryResult } from '../types';
 
 interface CalculatorProps {
   onInquirySubmitted: () => void;
+  onInquiryStateChange?: (hasActiveInquiry: boolean) => void;
 }
 
-export default function CalculatorSection({ onInquirySubmitted }: CalculatorProps) {
+export default function CalculatorSection({ onInquirySubmitted, onInquiryStateChange }: CalculatorProps) {
   // Form State
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
@@ -300,6 +301,9 @@ ${selectedFeatures.length > 0
 
     setResult(finalResult);
     onInquirySubmitted(); // Notify parent to refresh list if needed
+    if (onInquiryStateChange) {
+      onInquiryStateChange(true);
+    }
     setIsSubmitting(false);
   };
 
@@ -317,6 +321,9 @@ ${selectedFeatures.length > 0
 
   const handleReset = () => {
     setResult(null);
+    if (onInquiryStateChange) {
+      onInquiryStateChange(false);
+    }
     setName('');
     setEmail('');
     setPhone('');
