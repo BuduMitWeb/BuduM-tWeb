@@ -37,7 +37,7 @@ export default function References() {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="font-sans text-xs sm:text-sm text-slate-600 mt-4 leading-relaxed"
           >
-            Podívejte se na reálné projekty spuštěné pro naše spokojené klienty. Všechny tyto weby běží na Netlify, načítají se rychlostí blesku a jejich provoz stojí majitele přesně 0 Kč měsíčně.
+            Podívejte se na reálné projekty spuštěné pro naše spokojené klienty. Všechny tyto weby běží na Netlify, načítají se mimořádně rychle a jejich provoz stojí majitele přesně 0 Kč měsíčně.
           </motion.p>
         </div>
 
