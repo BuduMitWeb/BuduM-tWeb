@@ -34,7 +34,7 @@ export default function Hero() {
           repeat: Infinity,
           ease: "easeInOut"
         }}
-        className="absolute top-1/4 right-1/4 -z-10 w-96 h-96 bg-[radial-gradient(circle_at_center,rgba(251,146,60,0.12)_0,transparent_60%)] rounded-full blur-3xl"
+        className="absolute top-1/4 right-1/4 -z-10 w-96 h-96 bg-[radial-gradient(circle_at_center,rgba(0,229,255,0.08)_0,transparent_60%)] rounded-full blur-3xl"
       />
       <motion.div 
         animate={{
@@ -46,7 +46,7 @@ export default function Hero() {
           repeat: Infinity,
           ease: "easeInOut"
         }}
-        className="absolute bottom-1/4 left-1/4 -z-10 w-80 h-80 bg-[radial-gradient(circle_at_center,rgba(244,63,94,0.08)_0,transparent_60%)] rounded-full blur-3xl"
+        className="absolute bottom-1/4 left-1/4 -z-10 w-80 h-80 bg-[radial-gradient(circle_at_center,rgba(212,0,255,0.05)_0,transparent_60%)] rounded-full blur-3xl"
       />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
@@ -55,10 +55,10 @@ export default function Hero() {
           initial={{ opacity: 0, y: -10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className="inline-flex items-center gap-1.5 bg-gradient-to-r from-orange-500/10 to-rose-500/10 border border-orange-500/20 text-[#00E5FF] px-4 py-1.5 rounded-full text-[11px] font-mono uppercase tracking-widest mb-6 shadow-[0_0_15px_rgba(251,146,60,0.1)]"
+          className="inline-flex items-center gap-1.5 bg-gradient-to-r from-[#00E5FF]/10 to-[#00B0FF]/10 border border-[#00E5FF]/20 text-[#00E5FF] px-4 py-1.5 rounded-full text-[11px] font-mono uppercase tracking-widest mb-6 shadow-[0_0_15px_rgba(0,229,255,0.1)]"
         >
-          <Sparkles className="h-3.5 w-3.5 text-orange-400 animate-pulse" />
-          <span className="text-orange-300">✨ Osobní přístup & poctivá tvorba webů</span>
+          <Sparkles className="h-3.5 w-3.5 animate-pulse" />
+          <span>[ Profesionální moderní weby ]</span>
         </motion.div>
 
         {/* Heading */}
@@ -68,7 +68,7 @@ export default function Hero() {
           transition={{ duration: 0.6, delay: 0.1 }}
           className="font-sans font-black text-4xl sm:text-5xl lg:text-5xl text-white tracking-tighter max-w-5xl mx-auto leading-none mb-6"
         >
-          BUDUMÍT<span className="text-transparent bg-clip-text bg-gradient-to-r from-[#00E5FF] to-orange-400">WEB</span>
+          BUDUMÍT<span className="text-transparent bg-clip-text bg-gradient-to-r from-[#00E5FF] to-[#00B0FF]">WEB</span>
         </motion.h1>
 
         {/* Subtitle */}
@@ -76,9 +76,9 @@ export default function Hero() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.8, delay: 0.3 }}
-          className="font-sans text-sm sm:text-base text-slate-300 max-w-2xl mx-auto leading-relaxed"
+          className="font-sans text-xs sm:text-sm text-slate-400 max-w-2xl mx-auto leading-relaxed"
         >
-          Zapomeňte na neosobní agentury a složitou hantýrku. Společně vytvoříme <strong className="text-white font-semibold">krásný, srozumitelný a poctivý web</strong>, který přesně vystihne vaše podnikání a přitáhne ty správné zákazníky. Bezpečně, s lidským přístupem a <strong className="text-[#00E5FF] font-semibold">bez placení za hosting</strong>.
+          Stavíme moderní, vysoce optimalizované weby na míru. Naše prezentace běží na globální zabezpečené infrastruktuře <strong className="text-white font-semibold">Netlify</strong>, díky které získáte <strong className="text-[#00E5FF] font-semibold">hosting a SSL certifikát zdarma</strong>. Žádné drahé měsíční platby za pronájem systému ani skryté poplatky.
         </motion.p>
 
         {/* CTA Buttons */}
@@ -110,50 +110,50 @@ export default function Hero() {
           transition={{ duration: 0.8, delay: 0.5 }}
           className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 max-w-5xl mx-auto mt-16 text-left"
         >
-          <div className="group bg-[#16120f]/95 border border-orange-500/15 hover:border-orange-400/40 hover:bg-[#231b17]/95 p-6 rounded-xl transition-all duration-300 relative overflow-hidden shadow-[0_4px_25px_rgba(0,0,0,0.4)]">
-            <div className="absolute top-0 right-0 w-24 h-24 bg-gradient-to-bl from-orange-500/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-bl-full"></div>
-            <div className="text-orange-400 font-mono text-[10px] mb-3 flex items-center gap-1.5 font-bold">
+          <div className="group bg-[#131b2e]/90 border border-[#00E5FF]/15 hover:border-[#00E5FF]/40 hover:bg-[#1a253f]/90 p-6 rounded-xl transition-all duration-300 relative overflow-hidden shadow-[0_4px_20px_rgba(0,0,0,0.3)]">
+            <div className="absolute top-0 right-0 w-24 h-24 bg-gradient-to-bl from-[#00E5FF]/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-bl-full"></div>
+            <div className="text-[#00E5FF] font-mono text-[10px] mb-3 flex items-center gap-1.5 font-bold">
               <Layers className="h-3 w-3" />
               <span>[ 01 / TERMÍN ]</span>
             </div>
-            <h3 className="font-sans font-extrabold text-white text-base group-hover:text-orange-400 transition-colors duration-300">Návrh do 3 týdnů</h3>
-            <p className="text-xs text-slate-300 mt-2 leading-relaxed">
+            <h3 className="font-sans font-extrabold text-white text-base group-hover:text-[#00E5FF] transition-colors duration-300">Návrh do 3 týdnů</h3>
+            <p className="text-xs text-slate-400 mt-2 leading-relaxed">
               Garantujeme dodání prvotního funkčního návrhu k připomínkám zákazníka do 3 týdnů od podpisu smlouvy.
             </p>
           </div>
 
-          <div className="group bg-[#16120f]/95 border border-orange-500/15 hover:border-orange-400/40 hover:bg-[#231b17]/95 p-6 rounded-xl transition-all duration-300 relative overflow-hidden shadow-[0_4px_25px_rgba(0,0,0,0.4)]">
-            <div className="absolute top-0 right-0 w-24 h-24 bg-gradient-to-bl from-orange-500/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-bl-full"></div>
-            <div className="text-orange-400 font-mono text-[10px] mb-3 flex items-center gap-1.5 font-bold">
+          <div className="group bg-[#131b2e]/90 border border-[#00E5FF]/15 hover:border-[#00E5FF]/40 hover:bg-[#1a253f]/90 p-6 rounded-xl transition-all duration-300 relative overflow-hidden shadow-[0_4px_20px_rgba(0,0,0,0.3)]">
+            <div className="absolute top-0 right-0 w-24 h-24 bg-gradient-to-bl from-[#00E5FF]/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-bl-full"></div>
+            <div className="text-[#00E5FF] font-mono text-[10px] mb-3 flex items-center gap-1.5 font-bold">
               <Globe className="h-3 w-3" />
               <span>[ 02 / ROZPOČET ]</span>
             </div>
-            <h3 className="font-sans font-extrabold text-white text-base group-hover:text-orange-400 transition-colors duration-300">Nulový hosting</h3>
-            <p className="text-xs text-slate-300 mt-2 leading-relaxed">
+            <h3 className="font-sans font-extrabold text-white text-base group-hover:text-[#00E5FF] transition-colors duration-300">Nulový hosting</h3>
+            <p className="text-xs text-slate-400 mt-2 leading-relaxed">
               Díky Netlify neplatíte žádné pravidelné poplatky za pronájem systému. Bezplatný SSL certifikát je samozřejmostí.
             </p>
           </div>
 
-          <div className="group bg-[#16120f]/95 border border-orange-500/15 hover:border-orange-400/40 hover:bg-[#231b17]/95 p-6 rounded-xl transition-all duration-300 relative overflow-hidden shadow-[0_4px_25px_rgba(0,0,0,0.4)]">
-            <div className="absolute top-0 right-0 w-24 h-24 bg-gradient-to-bl from-orange-500/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-bl-full"></div>
-            <div className="text-orange-400 font-mono text-[10px] mb-3 flex items-center gap-1.5 font-bold">
+          <div className="group bg-[#131b2e]/90 border border-[#00E5FF]/15 hover:border-[#00E5FF]/40 hover:bg-[#1a253f]/90 p-6 rounded-xl transition-all duration-300 relative overflow-hidden shadow-[0_4px_20px_rgba(0,0,0,0.3)]">
+            <div className="absolute top-0 right-0 w-24 h-24 bg-gradient-to-bl from-[#00E5FF]/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-bl-full"></div>
+            <div className="text-[#00E5FF] font-mono text-[10px] mb-3 flex items-center gap-1.5 font-bold">
               <CheckCircle2 className="h-3 w-3" />
               <span>[ 03 / JISTOTA ]</span>
             </div>
-            <h3 className="font-sans font-extrabold text-white text-base group-hover:text-orange-400 transition-colors duration-300">2x revize v ceně</h3>
-            <p className="text-xs text-slate-300 mt-2 leading-relaxed">
+            <h3 className="font-sans font-extrabold text-white text-base group-hover:text-[#00E5FF] transition-colors duration-300">2x revize v ceně</h3>
+            <p className="text-xs text-slate-400 mt-2 leading-relaxed">
               Máte plnou kontrolu nad designem. Každý balíček zahrnuje dvě samostatná kola kompletního zapracování vašich připomínek.
             </p>
           </div>
 
-          <div className="group bg-[#16120f]/95 border border-orange-500/15 hover:border-orange-400/40 hover:bg-[#231b17]/95 p-6 rounded-xl transition-all duration-300 relative overflow-hidden shadow-[0_4px_25px_rgba(0,0,0,0.4)]">
-            <div className="absolute top-0 right-0 w-24 h-24 bg-gradient-to-bl from-orange-500/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-bl-full"></div>
-            <div className="text-orange-400 font-mono text-[10px] mb-3 flex items-center gap-1.5 font-bold">
+          <div className="group bg-[#131b2e]/90 border border-[#00E5FF]/15 hover:border-[#00E5FF]/40 hover:bg-[#1a253f]/90 p-6 rounded-xl transition-all duration-300 relative overflow-hidden shadow-[0_4px_20px_rgba(0,0,0,0.3)]">
+            <div className="absolute top-0 right-0 w-24 h-24 bg-gradient-to-bl from-[#00E5FF]/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-bl-full"></div>
+            <div className="text-[#00E5FF] font-mono text-[10px] mb-3 flex items-center gap-1.5 font-bold">
               <Shield className="h-3 w-3" />
               <span>[ 04 / BEZPEČNOST ]</span>
             </div>
-            <h3 className="font-sans font-extrabold text-white text-base group-hover:text-orange-400 transition-colors duration-300">Maximální bezpečnost</h3>
-            <p className="text-xs text-slate-300 mt-2 leading-relaxed">
+            <h3 className="font-sans font-extrabold text-white text-base group-hover:text-[#00E5FF] transition-colors duration-300">Maximální bezpečnost</h3>
+            <p className="text-xs text-slate-400 mt-2 leading-relaxed">
               Moderní statické weby nelze napadnout jako zastaralý WordPress. Nemají žádnou databázi, kterou by mohl kdokoli zneužít.
             </p>
           </div>
