@@ -1,0 +1,6 @@
+{
+  "name": "BuduMítWeb",
+  "description": "Tvorba bleskových, moderních a cenově dostupných low-code webů s AI. Spočítejte si okamžitou kalkulaci a získejte nabídku.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
