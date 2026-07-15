@@ -20,6 +20,7 @@ export default function App() {
   const [refreshInquiries, setRefreshInquiries] = useState(0);
   const [legalOpen, setLegalOpen] = useState(false);
   const [legalType, setLegalType] = useState<'terms' | 'gdpr'>('terms');
+  const [hasActiveInquiry, setHasActiveInquiry] = useState(false);
 
   useEffect(() => {
     const handleOpenLegal = (e: Event) => {
@@ -50,7 +51,10 @@ export default function App() {
       <Services />
 
       {/* Interactive Price Calculator & Dynamic AI Proposal Generation */}
-      <CalculatorSection onInquirySubmitted={handleInquirySubmitted} />
+      <CalculatorSection 
+        onInquirySubmitted={handleInquirySubmitted} 
+        onInquiryStateChange={setHasActiveInquiry}
+      />
 
       {/* Portfolio References Grid */}
       <References />
@@ -62,7 +66,7 @@ export default function App() {
       <FAQ />
 
       {/* Live submissions history */}
-      <RecentInquiries refreshTrigger={refreshInquiries} />
+      {!hasActiveInquiry && <RecentInquiries refreshTrigger={refreshInquiries} />}
 
       {/* Direct Contact Info & Custom Question Form */}
       <Contact />
@@ -79,4 +83,5 @@ export default function App() {
     </div>
   );
 }
+
 
