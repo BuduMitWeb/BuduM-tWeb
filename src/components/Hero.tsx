@@ -7,6 +7,17 @@ import bgHero from '../assets/images/hero_dark_bg_1784111320152.jpg';
 export default function Hero() {
   return (
     <section className="relative overflow-hidden bg-[#0A0A0A] py-16 sm:py-24 border-b border-white/10">
+      {/* SVG Linear Gradient for icons */}
+      <svg width="0" height="0" className="absolute pointer-events-none select-none">
+        <defs>
+          <linearGradient id="hero-icon-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stopColor="#00E5FF" />
+            <stop offset="50%" stopColor="#00B0FF" />
+            <stop offset="100%" stopColor="#D400FF" />
+          </linearGradient>
+        </defs>
+      </svg>
+
       {/* Premium background image with custom blending and contrast overlay */}
       <div className="absolute inset-0 z-0 pointer-events-none select-none">
         <img 
@@ -66,9 +77,14 @@ export default function Hero() {
           initial={{ opacity: 0, y: 15 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.1 }}
-          className="font-sans font-black text-4xl sm:text-5xl lg:text-5xl text-white tracking-tighter max-w-5xl mx-auto leading-none mb-6"
+          className="font-sans font-black flex flex-col items-center justify-center tracking-normal max-w-5xl mx-auto mb-8"
         >
-          BUDUMÍT<span className="text-transparent bg-clip-text bg-gradient-to-r from-[#00E5FF] to-[#00B0FF]">WEB</span>
+          <span className="text-5xl sm:text-7xl lg:text-8xl text-transparent bg-clip-text bg-gradient-to-r from-[#00E5FF] via-[#00B0FF] to-[#D400FF] leading-none mb-3 font-black">
+            BUDU MÍT WEB
+          </span>
+          <span className="text-2xl sm:text-3xl lg:text-4xl text-white font-bold tracking-tight leading-tight max-w-3xl mx-auto">
+            Tvorba webových stránek na míru
+          </span>
         </motion.h1>
 
         {/* Subtitle */}
@@ -111,9 +127,10 @@ export default function Hero() {
           className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 max-w-5xl mx-auto mt-16 text-left"
         >
           <div className="group bg-[#131b2e]/90 border border-[#00E5FF]/15 hover:border-[#00E5FF]/40 hover:bg-[#1a253f]/90 p-6 rounded-xl transition-all duration-300 relative overflow-hidden shadow-[0_4px_20px_rgba(0,0,0,0.3)]">
-            <div className="absolute top-0 right-0 w-24 h-24 bg-gradient-to-bl from-[#00E5FF]/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-bl-full"></div>
+            <div className="absolute top-0 right-0 w-24 h-24 bg-gradient-to-bl from-[#00E5FF]/20 via-[#00B0FF]/20 to-[#D400FF]/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-bl-full"></div>
+            <div className="absolute bottom-0 right-0 w-16 h-16 bg-gradient-to-tl from-[#D400FF]/20 via-[#00B0FF]/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-tl-full"></div>
             <div className="text-[#00E5FF] font-mono text-[10px] mb-3 flex items-center gap-1.5 font-bold">
-              <Layers className="h-3 w-3" />
+              <Layers className="h-5 w-5" stroke="url(#hero-icon-gradient)" />
               <span>[ 01 / TERMÍN ]</span>
             </div>
             <h3 className="font-sans font-extrabold text-white text-base group-hover:text-[#00E5FF] transition-colors duration-300">Návrh do 3 týdnů</h3>
@@ -123,9 +140,10 @@ export default function Hero() {
           </div>
 
           <div className="group bg-[#131b2e]/90 border border-[#00E5FF]/15 hover:border-[#00E5FF]/40 hover:bg-[#1a253f]/90 p-6 rounded-xl transition-all duration-300 relative overflow-hidden shadow-[0_4px_20px_rgba(0,0,0,0.3)]">
-            <div className="absolute top-0 right-0 w-24 h-24 bg-gradient-to-bl from-[#00E5FF]/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-bl-full"></div>
+            <div className="absolute top-0 right-0 w-24 h-24 bg-gradient-to-bl from-[#00E5FF]/20 via-[#00B0FF]/20 to-[#D400FF]/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-bl-full"></div>
+            <div className="absolute bottom-0 right-0 w-16 h-16 bg-gradient-to-tl from-[#D400FF]/20 via-[#00B0FF]/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-tl-full"></div>
             <div className="text-[#00E5FF] font-mono text-[10px] mb-3 flex items-center gap-1.5 font-bold">
-              <Globe className="h-3 w-3" />
+              <Globe className="h-5 w-5" stroke="url(#hero-icon-gradient)" />
               <span>[ 02 / ROZPOČET ]</span>
             </div>
             <h3 className="font-sans font-extrabold text-white text-base group-hover:text-[#00E5FF] transition-colors duration-300">Nulový hosting</h3>
@@ -135,9 +153,10 @@ export default function Hero() {
           </div>
 
           <div className="group bg-[#131b2e]/90 border border-[#00E5FF]/15 hover:border-[#00E5FF]/40 hover:bg-[#1a253f]/90 p-6 rounded-xl transition-all duration-300 relative overflow-hidden shadow-[0_4px_20px_rgba(0,0,0,0.3)]">
-            <div className="absolute top-0 right-0 w-24 h-24 bg-gradient-to-bl from-[#00E5FF]/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-bl-full"></div>
+            <div className="absolute top-0 right-0 w-24 h-24 bg-gradient-to-bl from-[#00E5FF]/20 via-[#00B0FF]/20 to-[#D400FF]/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-bl-full"></div>
+            <div className="absolute bottom-0 right-0 w-16 h-16 bg-gradient-to-tl from-[#D400FF]/20 via-[#00B0FF]/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-tl-full"></div>
             <div className="text-[#00E5FF] font-mono text-[10px] mb-3 flex items-center gap-1.5 font-bold">
-              <CheckCircle2 className="h-3 w-3" />
+              <CheckCircle2 className="h-5 w-5" stroke="url(#hero-icon-gradient)" />
               <span>[ 03 / JISTOTA ]</span>
             </div>
             <h3 className="font-sans font-extrabold text-white text-base group-hover:text-[#00E5FF] transition-colors duration-300">2x revize v ceně</h3>
@@ -147,9 +166,10 @@ export default function Hero() {
           </div>
 
           <div className="group bg-[#131b2e]/90 border border-[#00E5FF]/15 hover:border-[#00E5FF]/40 hover:bg-[#1a253f]/90 p-6 rounded-xl transition-all duration-300 relative overflow-hidden shadow-[0_4px_20px_rgba(0,0,0,0.3)]">
-            <div className="absolute top-0 right-0 w-24 h-24 bg-gradient-to-bl from-[#00E5FF]/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-bl-full"></div>
+            <div className="absolute top-0 right-0 w-24 h-24 bg-gradient-to-bl from-[#00E5FF]/20 via-[#00B0FF]/20 to-[#D400FF]/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-bl-full"></div>
+            <div className="absolute bottom-0 right-0 w-16 h-16 bg-gradient-to-tl from-[#D400FF]/20 via-[#00B0FF]/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-tl-full"></div>
             <div className="text-[#00E5FF] font-mono text-[10px] mb-3 flex items-center gap-1.5 font-bold">
-              <Shield className="h-3 w-3" />
+              <Shield className="h-5 w-5" stroke="url(#hero-icon-gradient)" />
               <span>[ 04 / BEZPEČNOST ]</span>
             </div>
             <h3 className="font-sans font-extrabold text-white text-base group-hover:text-[#00E5FF] transition-colors duration-300">Maximální bezpečnost</h3>
