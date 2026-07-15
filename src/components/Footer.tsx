@@ -64,7 +64,7 @@ export default function Footer() {
               <Heart className="h-3 w-3 text-[#00E5FF] fill-[#00E5FF]" />
               <span>pomocí AI a low-code</span>
             </div>
-            <span className="text-[10px] text-[#00E5FF]/80">Designed by BuduMítWeb</span>
+            <span className="text-xs sm:text-sm font-extrabold tracking-wide text-transparent bg-clip-text bg-gradient-to-r from-[#00E5FF] via-[#00B0FF] to-[#D400FF]">Designed by BuduMítWeb</span>
           </div>
         </div>
 
